@@ -38,8 +38,9 @@ def main():
         )
         logging.info("📝 Timesheet collection started...")
 
-        sheet_names = ["202602", 
-                       "202603"
+        sheet_names = [ 
+                        "202604", 
+                        "202605"
                        ]
 
         for sheet_name in sheet_names:
@@ -71,7 +72,7 @@ def main():
 
                 excel_sheet += transformed_data
                 logging.info(
-                    f"[{sheet_name}]-[🧑🏽 {'*' * (10-len(employee.nickname))} {employee.nickname} ] ✅ OK."
+                    f"[{sheet_name}]-[🧑🏽 {'*' * (15-len(employee.nickname))} {employee.nickname} ] ✅ OK."
                 )
 
             export(excel_sheet, sheet_name)
