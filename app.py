@@ -72,7 +72,7 @@ def main():
 
                 excel_sheet += transformed_data
                 logging.info(
-                    f"[{sheet_name}]-[🧑🏽 {'*' * (15-len(employee.nickname))} {employee.nickname} ] ✅ OK."
+                    f"[{sheet_name}]-[ {'*' * (15-len(employee.nickname))} {employee.nickname} ] ✅ OK."
                 )
 
             export(excel_sheet, sheet_name)
